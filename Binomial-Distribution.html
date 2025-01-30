@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+ <head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="appearence.css">
+   <title>Binomial Distribution</title>
+ </head>
+<body>
+  <h1>Hello, World!</h1>
+  
+  <div class="into">
+   <h3>What's Binomial distribution?</h3>
+   <p>binomial distribution measures the chance of :
+     how likely i will get a specific number of successes 
+     (that has it's own chance) after this many tries?</p>
+
+     <p>e.g: a coin flip, we first set our success , either the head will be our success or the tail. let's go with the head witch has a successes  chance(p) of 50% to happen, now we start throwing the coin (n) number of times
+     , 5 times. after that, we got head(the setted success) 3 times... what are odds of such?</p>
+
+     <p>And this is where Binomial distribution comes into play, to know what are the odds of getting 3 heads You can go ahead and press the button below and search for 3, to find out its
+     ... 31% chance! and the best part is we can see the chance of the other numbers too! even the chance of getting no heads (0).</p>
+
+    
+  </div>
+
+  <div class="main">
+    <h3>Binomial graph</h3>
+    <p>we don't have to limit ourselves to the coin example, we can set the number of tries(n) and the chance of the success(p) to output different results! the more you play with this graph the better you will understand binomial distribution.
+    </p>
+  </div>
+
+  <div class="big-parent">
+  <div id="chance-axis"></div>
+  <div id="flex" class="flexing-parent">
+    
+  </div>
+    <div class="input">
+      <label>Number of tries- n:</label>
+     <input class="bar" type="number" placeholder="n" value="5" min="0" max="170"/>
+     <label>Success chance- p:</label>
+     <input class="bar" type="number" placeholder="p" value="0.5" min="0" max="1"/>
+     <button>Check</button>
+     <input id="checked" type="checkbox" />
+     <label>Ignore zeros</label>
+     <div id="overflowError" class="error"></div>
+    </div>
+  </div>
+  <br><br><br>
+
+    <h3>Examples to try</h3>
+
+  <div class="fun">
+
+
+    <div class="fun-preview">
+      <h4>Getting a shiny pokemon</h4>
+      <p>Success Chance(p): 1/8192 = <span>0.000122</span> <button class="paste">Add it above</button> </p>
+      
+      <p>but in later versions its: 1/4096 = <span>0.000244</span> <button class="paste">Add it above</button></p>
+      
+    </div>
+
+    <div class="fun-preview">
+      <h4>Getting a prismatic shard from omni geodes (Stardew Valley)</h4>
+      <p>Success Chance(p): 1/250 = <span>0.004</span> <button class="paste">Add it above</button></p>
+      
+    </div>
+  </div>
+  <br><br>
+  <div class="challenge">
+    <h3>Challenge : can you copy these graphs?</h3>
+    <div class="two-frames">
+
+      <div class="frame">
+      <img src="./graphs/primer's graph.png" alt="primer's graph"/>
+      <p>The success chance(p) is : 0.60</p>
+      </div>
+
+      <div class="frame">
+        <img class="threes-img"
+        src="./graphs/ThreeblueOnebrown's graph.png"
+        alt="ThreeblueOnebrown's graph"
+        />
+        <p>The success chance(p) is : 0.95</p>
+        <p>The green bar's chance is : 26%</p>
+      </div>
+
+    </div>
+  </div>
+  
+<script src="classes.js" ></script>  
+<script src="script.js" ></script>
+</body>
+</html>
